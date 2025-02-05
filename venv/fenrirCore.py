@@ -42,6 +42,7 @@ async def on_message(message: Message) -> None:
     channel: str = str(message.channel)
 
     print(f'[{channel}] {username}: "{user_message}"')
+    await send_message(message, user_message)
 
 def main() -> None:
     client.run(token=TOKEN)
