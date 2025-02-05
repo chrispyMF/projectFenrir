@@ -10,7 +10,7 @@ TOKEN: Final[str] = os.getenv('DISCORD_TOKEN')
 print(TOKEN)
 
 #Setup intents
-intents: Intents = discord.Intents.all()
+intents: Intents = Intents.all()
 client: Client = Client(intents=intents)
 
 #Message functionality
